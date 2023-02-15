@@ -1,0 +1,23 @@
+[package]
+name = "binarymagic-tas"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alexander Sagen <alexander@sagen.me>"]
+license = "MIT"
+
+[dependencies]
+nom = "7"
+hex-display = "0.3"
+safe-transmute = "0.11"
+
+[dependencies.windows]
+version = "0.44"
+features = [
+	"Win32_Foundation",
+	"Win32_UI_WindowsAndMessaging",
+	"Win32_UI_Input_KeyboardAndMouse",
+	"Win32_System_Threading",
+	"Win32_System_Memory",
+	"Win32_System_Diagnostics_Debug",
+	"Win32_System_SystemInformation",
+]
